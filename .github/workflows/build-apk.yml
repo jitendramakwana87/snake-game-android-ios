@@ -19,10 +19,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x android/gradle/wrapper/gradlew
+        run: chmod +x SnakeGame/android/gradlew
 
       - name: Build Debug APK
-        run: ./android/gradle/wrapper/gradlew assembleDebug
+        run: ./SnakeGame/android/gradlew assembleDebug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
